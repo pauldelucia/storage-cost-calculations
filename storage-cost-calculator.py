@@ -1,15 +1,15 @@
 # Enter the years here
-years = 2
+years = 50
 
 # Constants
-C_0=450
+c0=450
 initial_decline=0.15
 softening_factor=0.965
 
 def cumulative_storage_cost(t):
     '''Calculates the cumulative storage cost on Dash Platform for t years of storage'''
     total_cost = 0
-    current_cost = C_0
+    current_cost = c0
     current_decline = initial_decline
     
     for _ in range(t):
